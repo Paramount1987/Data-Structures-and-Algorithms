@@ -20,10 +20,11 @@ function createQueue() {
 }
 
 const q = createQueue()
-console.log(q.isEmpty())
+
 q.enqueue('1 step')
 q.enqueue('2 step')
 q.enqueue('3 step')
 
 q.dequeue()
-console.log(q.peek())
+
+exports.createQueue = createQueue
